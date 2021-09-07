@@ -44,3 +44,10 @@ var studyGroup = [
 ];
 
 //stampo in pagina i valori corrispondenti a firstName e lastName di ogni oggetto presente dell'array studyGroup
+for(let i = 0; i < studyGroup.length; i++) {
+    document.getElementById("ninja_turtles").innerHTML += `
+    <li><strong>Nome:</strong> ${studyGroup[i].firstName}</li>
+    <li><strong>Cognome:</strong> ${studyGroup[i].lastName}</li>
+    <hr>`
+
+}
